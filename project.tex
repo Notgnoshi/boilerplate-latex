@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\input{project.sty}
+
+\title{A Boilerplate \LaTeX{} Project}
+\author{Austin Gill}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \begin{abstract}
+        This is an example \LaTeX{} document meant to be a boilerplate for future projects.
+    \end{abstract}
+    \thispagestyle{empty}
+
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \section{Introduction}\label{sec:introduction}
+        \input{sections/introduction.tex}
+
+    \section{Conclusion}\label{sec:conclusion}
+        \input{sections/conclusion.tex}
+
+    \newpage
+    \appendix\appendixpage{}\addappheadtotoc{}
+    \section{Supplemental Content}\label{sec:supplemental-content}
+        \todo{Provide supplemental content}
+
+    \newpage
+    \bibliographystyle{ieeetr}
+    \bibliography{project}
+\end{document}
