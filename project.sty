@@ -8,12 +8,12 @@
 \usepackage[titletoc]{appendix}
 \usepackage{array}
 \usepackage[english]{babel}
+\usepackage{booktabs}
 \usepackage{cancel}
 \usepackage{color}
 \usepackage{eqparbox}
 \usepackage{float}
-% Use large left margins for the TODO notes. Set back to 1in to publish.
-\usepackage[margin=1in, left=2in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
@@ -51,7 +51,7 @@
 \pgfplotsset{compat=1.15}
 \numberwithin{equation}{section}
 % Sets the width of the margin TODO notes
-\setlength{\marginparwidth}{1.7in}
+\setlength{\marginparwidth}{0.84in}
 \reversemarginpar{}
 
 % All I want is to have comment italicized, but I cant figure out how
@@ -60,10 +60,6 @@
 \algnewcommand{\IComment}[1]{\Comment{\textit{#1}}}
 
 \graphicspath{{./figures/}}
-
-% Force LaTeX to avoid splitting footnotes across pages.
-% Doesn't work well when using $$...$$ in your footnotes.
-\interfootnotelinepenalty=10000
 
 % Make \paragraph{}s end with newlines and no indents
 \titleformat{\paragraph}
